@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Roda de Conversa - Confirmação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Roda de Conversa para Produtores Rurais</h1>
+    <p class="data">03 de março de 2026</p>
+    <p class="local">
+      Sede do Sindicato dos Produtores Rurais de Jaíba e Matias Cardoso
+    </p>
+  </div>
+
+  <form id="form">
+    <input type="text" placeholder="Nome completo" id="nome" required>
+    <input type="text" placeholder="Município" id="municipio" required>
+    <input type="text" placeholder="Telefone" id="telefone" required>
+
+    <select id="presenca" required>
+      <option value="">Vai comparecer?</option>
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select>
+
+    <textarea placeholder="Observações (opcional)" id="observacoes"></textarea>
+
+    <button type="submit">Confirmar Presença</button>
+  </form>
+
+  <p id="msg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
